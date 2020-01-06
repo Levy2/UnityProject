@@ -1,4 +1,4 @@
 sceneSetups:
-- path: D:/Users/Levy/Documents/Unity/test/Assets/TestScene.unity
+- path: Assets/Scenes/TestScene.unity
   isLoaded: 1
   isActive: 1
