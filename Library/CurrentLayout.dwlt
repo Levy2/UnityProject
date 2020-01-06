@@ -138,7 +138,7 @@ MonoBehaviour:
   m_MinSize: {x: 713, y: 498}
   m_MaxSize: {x: 18008, y: 14048}
   vertical: 0
-  controlID: 13
+  controlID: 103
 --- !u!114 &7
 MonoBehaviour:
   m_ObjectHideFlags: 52
@@ -189,7 +189,7 @@ MonoBehaviour:
   m_MinSize: {x: 234, y: 498}
   m_MaxSize: {x: 10004, y: 14048}
   vertical: 1
-  controlID: 14
+  controlID: 68
 --- !u!114 &9
 MonoBehaviour:
   m_ObjectHideFlags: 52
@@ -267,8 +267,8 @@ MonoBehaviour:
     y: 0
     width: 462
     height: 947
-  m_MinSize: {x: 275, y: 50}
-  m_MaxSize: {x: 4000, y: 4000}
+  m_MinSize: {x: 277, y: 74}
+  m_MaxSize: {x: 4002, y: 4024}
   m_ActualView: {fileID: 21}
   m_Panes:
   - {fileID: 21}
@@ -448,23 +448,23 @@ MonoBehaviour:
   m_SceneHierarchy:
     m_TreeViewState:
       scrollPos: {x: 0, y: 0}
-      m_SelectedIDs: 36a1ffff
-      m_LastClickedID: -24266
-      m_ExpandedIDs: 2efbffff3cfbffffd6fbffffdefbffff
+      m_SelectedIDs: c898ffff88a1ffff
+      m_LastClickedID: -24184
+      m_ExpandedIDs: 10abffff38fbffff42fbffff48fbffff4efbffffdefbffff
       m_RenameOverlay:
         m_UserAcceptedRename: 0
-        m_Name: 
-        m_OriginalName: 
+        m_Name: Cube
+        m_OriginalName: Cube
         m_EditFieldRect:
           serializedVersion: 2
           x: 0
           y: 0
           width: 0
           height: 0
-        m_UserData: 0
+        m_UserData: -24184
         m_IsWaitingForDelay: 0
         m_IsRenaming: 0
-        m_OriginalEventType: 11
+        m_OriginalEventType: 4
         m_IsRenamingFilename: 0
         m_ClientGUIView: {fileID: 7}
       m_SearchString: 
@@ -505,9 +505,9 @@ MonoBehaviour:
   m_isRotationLocked: 0
   m_AudioPlay: 0
   m_Position:
-    m_Target: {x: 2.849955, y: -0.22532535, z: -57.869152}
+    m_Target: {x: 11.787689, y: 0.09635322, z: 8.861208}
     speed: 2
-    m_Value: {x: 2.849955, y: -0.22532535, z: -57.869152}
+    m_Value: {x: 11.787689, y: 0.09635322, z: 8.861208}
   m_RenderMode: 0
   m_CameraMode:
     drawMode: 0
@@ -535,13 +535,13 @@ MonoBehaviour:
       speed: 2
       m_Value: 0
   m_Rotation:
-    m_Target: {x: 0.002481019, y: -0.9940946, z: 0.023269564, w: 0.10596405}
+    m_Target: {x: -0.0009050919, y: -0.010802627, z: 0.000011262815, w: -0.9999413}
     speed: 2
-    m_Value: {x: 0.002481019, y: -0.9940946, z: 0.023269564, w: 0.10596405}
+    m_Value: {x: -0.0009050919, y: -0.010802627, z: 0.000011262815, w: -0.9999413}
   m_Size:
-    m_Target: 28.452097
+    m_Target: 47.940975
     speed: 2
-    m_Value: 28.452097
+    m_Value: 47.940975
   m_Ortho:
     m_Target: 0
     speed: 2
@@ -617,20 +617,20 @@ MonoBehaviour:
     m_ShowAllHits: 0
     m_SearchArea: 1
     m_Folders:
-    - Assets/Scripts
+    - Assets/small_town_america/general/models/street
   m_ViewMode: 1
   m_StartGridSize: 64
   m_LastFolders:
-  - Assets/Scripts
+  - Assets/small_town_america/general/models/street
   m_LastFoldersGridSize: -1
   m_LastProjectPath: D:\Users\Levy\Documents\GitHub\UnityProject
   m_LockTracker:
     m_IsLocked: 0
   m_FolderTreeState:
-    scrollPos: {x: 0, y: 79}
-    m_SelectedIDs: e60d0000
-    m_LastClickedID: 3558
-    m_ExpandedIDs: 00000000be0a0000d00a00000a0b00002a0b0000ce0b0000de0b0000780e00001810000074100000ae1000000412000086120000ca1200002e1300006e1300009c130000ee130000f8130000941600007c3600007e3600008036000000ca9a3b
+    scrollPos: {x: 0, y: 109}
+    m_SelectedIDs: 2e120000
+    m_LastClickedID: 4654
+    m_ExpandedIDs: 00000000be0a0000d00a00000a0b00002a0b0000ce0b0000de0b0000800e0000b60f0000201000007c100000b61000000e12000090120000d41200003813000078130000a6130000f8130000021400001e1600009e160000bc360000be360000c036000000ca9a3b
     m_RenameOverlay:
       m_UserAcceptedRename: 0
       m_Name: 
@@ -658,7 +658,7 @@ MonoBehaviour:
     scrollPos: {x: 0, y: 0}
     m_SelectedIDs: 
     m_LastClickedID: 0
-    m_ExpandedIDs: 00000000be0a0000d00a00000a0b00002a0b0000ce0b0000de0b0000780e00001810000074100000ae1000000412000086120000ca1200002e1300006e1300009c130000ee130000f8130000941600007c3600007e36000080360000
+    m_ExpandedIDs: 00000000be0a0000d00a00000a0b00002a0b0000ce0b0000de0b0000800e0000201000007c100000b61000000e12000090120000d41200003813000078130000a6130000f8130000021400009e160000bc360000be360000c0360000
     m_RenameOverlay:
       m_UserAcceptedRename: 0
       m_Name: 

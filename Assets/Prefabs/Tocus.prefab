@@ -180,7 +180,7 @@ Transform:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1132656779480422}
-  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: 2.2931843, y: 0.066501886, z: -4.59359}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
@@ -1076,7 +1076,7 @@ Rigidbody:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1610265466720824}
   serializedVersion: 2
-  m_Mass: 1500
+  m_Mass: 1000
   m_Drag: 0
   m_AngularDrag: 0.05
   m_UseGravity: 1
@@ -1095,8 +1095,8 @@ BoxCollider:
   m_IsTrigger: 0
   m_Enabled: 1
   serializedVersion: 2
-  m_Size: {x: 1.7009137, y: 1.3627474, z: 4.4702406}
-  m_Center: {x: 0.017769426, y: 0.34127748, z: 0.011580944}
+  m_Size: {x: 1.6971095, y: 1.2685398, z: 4.4702406}
+  m_Center: {x: 0.0809655, y: 0.38838148, z: 0.011580944}
 --- !u!114 &3853979865235920023
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -1954,7 +1954,7 @@ WheelCollider:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 699191749430033892}
   m_Center: {x: 0, y: 0, z: 0}
-  m_Radius: 0.08
+  m_Radius: 0.31
   m_SuspensionSpring:
     spring: 90000
     damper: 9000
@@ -2141,7 +2141,7 @@ WheelCollider:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 867103029172416216}
   m_Center: {x: 0, y: 0, z: 0}
-  m_Radius: 0.08
+  m_Radius: 0.31
   m_SuspensionSpring:
     spring: 90000
     damper: 9000
@@ -2235,7 +2235,7 @@ WheelCollider:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 3385071601648422252}
   m_Center: {x: 0, y: 0, z: 0}
-  m_Radius: 0.08
+  m_Radius: 0.31
   m_SuspensionSpring:
     spring: 90000
     damper: 9000
@@ -2678,7 +2678,7 @@ WheelCollider:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 6435412576457154341}
   m_Center: {x: 0, y: 0, z: 0}
-  m_Radius: 0.08
+  m_Radius: 0.31
   m_SuspensionSpring:
     spring: 90000
     damper: 9000
@@ -2759,13 +2759,13 @@ Transform:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 8304068381379543762}
-  m_LocalRotation: {x: 0.11401315, y: -0.6262024, z: 0.76605886, w: 0.089584835}
-  m_LocalPosition: {x: -5.534, y: 0.9391, z: -5.664}
-  m_LocalScale: {x: 0.02274724, y: 0.012153032, z: 0.0075447857}
+  m_LocalRotation: {x: 0.110432535, y: -0.62684375, z: 0.7665583, w: 0.08520533}
+  m_LocalPosition: {x: -5.5242, y: 0.9398, z: -5.6663}
+  m_LocalScale: {x: 0.024784748, y: 0.012153032, z: 0.013853659}
   m_Children: []
   m_Father: {fileID: 5563351188660214854}
   m_RootOrder: 0
-  m_LocalEulerAnglesHint: {x: 101.52301, y: -161.773, z: 1.5879974}
+  m_LocalEulerAnglesHint: {x: 101.52301, y: -161.773, z: 2.2429962}
 --- !u!33 &5643365207229411595
 MeshFilter:
   m_ObjectHideFlags: 0
@@ -2837,7 +2837,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 8319898577344454855}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: -5.8628, y: 0.7962, z: -6.0786}
+  m_LocalPosition: {x: -5.8628, y: 0.789, z: -5.96}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 7686338246692695653}
@@ -2867,7 +2867,7 @@ Camera:
     height: 1
   near clip plane: 0.01
   far clip plane: 1000
-  field of view: 60
+  field of view: 55
   orthographic: 0
   orthographic size: 5
   m_Depth: -1
