@@ -57,7 +57,7 @@ MeshRenderer:
   m_RenderingLayerMask: 1
   m_RendererPriority: 0
   m_Materials:
-  - {fileID: 2100000, guid: 98391d2ee511f374dadc15d222c2f73d, type: 2}
+  - {fileID: 2100000, guid: 211d33d850b0f864e9483baf859eab15, type: 2}
   - {fileID: 2100000, guid: 58a785c81055cc8488277b94d0fc1796, type: 2}
   m_StaticBatchInfo:
     firstSubMesh: 0
@@ -446,7 +446,7 @@ MeshRenderer:
   m_RenderingLayerMask: 1
   m_RendererPriority: 0
   m_Materials:
-  - {fileID: 2100000, guid: 98391d2ee511f374dadc15d222c2f73d, type: 2}
+  - {fileID: 2100000, guid: 211d33d850b0f864e9483baf859eab15, type: 2}
   - {fileID: 2100000, guid: 5e2f5fc7cf6b9614c9bcdcb4066800bd, type: 2}
   - {fileID: 2100000, guid: 58a785c81055cc8488277b94d0fc1796, type: 2}
   m_StaticBatchInfo:
@@ -525,7 +525,7 @@ MeshRenderer:
   m_RenderingLayerMask: 1
   m_RendererPriority: 0
   m_Materials:
-  - {fileID: 2100000, guid: 98391d2ee511f374dadc15d222c2f73d, type: 2}
+  - {fileID: 2100000, guid: 211d33d850b0f864e9483baf859eab15, type: 2}
   - {fileID: 2100000, guid: 58a785c81055cc8488277b94d0fc1796, type: 2}
   m_StaticBatchInfo:
     firstSubMesh: 0
@@ -680,7 +680,7 @@ MeshRenderer:
   m_RenderingLayerMask: 1
   m_RendererPriority: 0
   m_Materials:
-  - {fileID: 2100000, guid: 98391d2ee511f374dadc15d222c2f73d, type: 2}
+  - {fileID: 2100000, guid: 211d33d850b0f864e9483baf859eab15, type: 2}
   - {fileID: 2100000, guid: 5e2f5fc7cf6b9614c9bcdcb4066800bd, type: 2}
   m_StaticBatchInfo:
     firstSubMesh: 0
@@ -1022,9 +1022,9 @@ GameObject:
   - component: {fileID: 4013073016293618}
   - component: {fileID: 3916935642016892472}
   - component: {fileID: 3853979865235920023}
-  - component: {fileID: 5120125968378203745}
+  - component: {fileID: 5410798938485378978}
   m_Layer: 0
-  m_Name: Tocus
+  m_Name: Tocus2
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -1106,7 +1106,7 @@ MonoBehaviour:
   rightBackT: {fileID: 4944351361650126}
   maxSteerAngle: 30
   motorForce: 50
---- !u!64 &5120125968378203745
+--- !u!64 &5410798938485378978
 MeshCollider:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -1177,7 +1177,7 @@ MeshRenderer:
   m_RenderingLayerMask: 1
   m_RendererPriority: 0
   m_Materials:
-  - {fileID: 2100000, guid: 98391d2ee511f374dadc15d222c2f73d, type: 2}
+  - {fileID: 2100000, guid: 211d33d850b0f864e9483baf859eab15, type: 2}
   - {fileID: 2100000, guid: 5e2f5fc7cf6b9614c9bcdcb4066800bd, type: 2}
   - {fileID: 2100000, guid: 58a785c81055cc8488277b94d0fc1796, type: 2}
   m_StaticBatchInfo:
@@ -1256,7 +1256,7 @@ MeshRenderer:
   m_RenderingLayerMask: 1
   m_RendererPriority: 0
   m_Materials:
-  - {fileID: 2100000, guid: 98391d2ee511f374dadc15d222c2f73d, type: 2}
+  - {fileID: 2100000, guid: 211d33d850b0f864e9483baf859eab15, type: 2}
   - {fileID: 2100000, guid: 5e2f5fc7cf6b9614c9bcdcb4066800bd, type: 2}
   - {fileID: 2100000, guid: a0f1981304adf464683cda53eaf710eb, type: 2}
   m_StaticBatchInfo:
@@ -1412,7 +1412,7 @@ MeshRenderer:
   m_RenderingLayerMask: 1
   m_RendererPriority: 0
   m_Materials:
-  - {fileID: 2100000, guid: 98391d2ee511f374dadc15d222c2f73d, type: 2}
+  - {fileID: 2100000, guid: 211d33d850b0f864e9483baf859eab15, type: 2}
   - {fileID: 2100000, guid: 5e2f5fc7cf6b9614c9bcdcb4066800bd, type: 2}
   - {fileID: 2100000, guid: a0f1981304adf464683cda53eaf710eb, type: 2}
   m_StaticBatchInfo:
@@ -1568,7 +1568,7 @@ MeshRenderer:
   m_RenderingLayerMask: 1
   m_RendererPriority: 0
   m_Materials:
-  - {fileID: 2100000, guid: 98391d2ee511f374dadc15d222c2f73d, type: 2}
+  - {fileID: 2100000, guid: 211d33d850b0f864e9483baf859eab15, type: 2}
   - {fileID: 2100000, guid: 5e2f5fc7cf6b9614c9bcdcb4066800bd, type: 2}
   m_StaticBatchInfo:
     firstSubMesh: 0
@@ -1646,7 +1646,7 @@ MeshRenderer:
   m_RenderingLayerMask: 1
   m_RendererPriority: 0
   m_Materials:
-  - {fileID: 2100000, guid: 98391d2ee511f374dadc15d222c2f73d, type: 2}
+  - {fileID: 2100000, guid: 211d33d850b0f864e9483baf859eab15, type: 2}
   - {fileID: 2100000, guid: c0007dde38610b743993585b8de4d68c, type: 2}
   - {fileID: 2100000, guid: 595e12d85144c7e47920445346303859, type: 2}
   - {fileID: 2100000, guid: c920ee48dbabd264da8566508a7acd58, type: 2}
