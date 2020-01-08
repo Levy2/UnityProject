@@ -4,5 +4,14 @@
 EditorBuildSettings:
   m_ObjectHideFlags: 0
   serializedVersion: 2
-  m_Scenes: []
+  m_Scenes:
+  - enabled: 0
+    path: Assets/Scenes/Bart's Scene.unity
+    guid: 487c5a0d15835fe4487ef40cff036f2e
+  - enabled: 0
+    path: Assets/VRTK/Examples/[002 - Pointers] StraightPointer.unity
+    guid: a21359c56ac86e84e8c97daea769afb1
+  - enabled: 1
+    path: Assets/Scenes/Bart's Scene 1.unity
+    guid: b204d50fc3bc021499b5ce2966a5c35f
   m_configObjects: {}
