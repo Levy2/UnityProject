@@ -2013,7 +2013,6 @@ GameObject:
   m_Component:
   - component: {fileID: 3819960957110501956}
   - component: {fileID: 3819960957110501957}
-  - component: {fileID: 3819960957110501963}
   m_Layer: 0
   m_Name: '[VRTK_SDKManager]'
   m_TagString: Untagged
@@ -2062,19 +2061,6 @@ MonoBehaviour:
   - {fileID: 0}
   excludeTargetGroups: 1a0000001b000000
   persistOnLoad: 0
---- !u!114 &3819960957110501963
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 3819960957110501958}
-  m_Enabled: 0
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: dbd363faecdfb6d4da2d9cdab9de34f8, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  forceOculusFloorLevel: 1
 --- !u!1 &3819960957280879856
 GameObject:
   m_ObjectHideFlags: 0
