@@ -31,10 +31,16 @@ namespace DriVR.Scenario
             sequenceQuestionBegin = DOTween.Sequence();
             sequenceCorrect = DOTween.Sequence();
             sequenceIncorrect = DOTween.Sequence();
+            StartSequenceQuestionBegin();
         }
 
         private void StartSequenceQuestionBegin()
         {
+            sequenceQuestionBegin.SetEase(Ease.InOutSine);
+            sequenceQuestionBegin.AppendInterval(1f);
+            sequenceQuestionBegin.Append(playerCar.DOLocalMoveZ(-166.5f, 10));
+            sequenceQuestionBegin.Insert(0, greenCar.DOLocalMoveX(15.6f, 10));
+            sequenceQuestionBegin.Insert(0, blueCar.DOLocalMoveX(38.2f, 10));
         }
     }
 }
