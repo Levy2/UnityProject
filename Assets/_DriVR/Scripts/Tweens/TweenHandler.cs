@@ -16,16 +16,47 @@ namespace DriVR.Scenario
     {
         #region Fields
 
+        Sequence uiQuestionSequence;
+
+        private static TweenHandler instance;
+
         [SerializeField] private Transform uiQuestion;
 
         #endregion
 
+        #region Properties and Indexers
+
+        public static TweenHandler Instance { get { return instance; } private set { instance = value; } }
+
+        #endregion
+
+        #region Unity Methods
+
+        private void Awake()
+        {
+            if (Instance == null) { Instance = this; }
+        }
+
         private void Start()
         {
-            /*playerCar.DOLocalMoveZ(-7.19f, 3).SetEase(Ease.OutQuint);
-            greenCar.DOLocalMove(new Vector3 (34.63f, 0.54f, -18.73f), 3).SetEase(Ease.OutQuint);
-            blueCar.DOLocalMoveZ(-31.08f, 3).SetEase(Ease.OutQuint); */
+            MakeElementsTransparent();
         }
+
+        #endregion
+
+        #region Methods
+
+        private void MakeElementsTransparent()
+        {
+            uiQuestion.gameObject.GetComponent<CanvasGroup>().alpha = 0;
+        }
+
+        public void SequenceUiQuestion()
+        {
+            uiQuestion.GetComponent<CanvasGroup>().DOFade(1, 1).SetDelay(10);
+        }
+
+        #endregion
     }
 }
 
