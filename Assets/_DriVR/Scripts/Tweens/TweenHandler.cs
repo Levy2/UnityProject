@@ -49,7 +49,6 @@ namespace DriVR.Scenario
             sequenceAnswerIncorrect = DOTween.Sequence();
 
             MakeElementsTransparent();
-            SequenceAnswerIncorrect();
         }
 
         #endregion
@@ -69,7 +68,12 @@ namespace DriVR.Scenario
             uiQuestion.GetComponent<CanvasGroup>().DOFade(1, 1).SetDelay(10);
         }
 
-        public void SequenceAnswerIncorrect()
+        public void StartSequenceAnswerIncorrect()
+        {
+            StartCoroutine(SequenceAnswerIncorrect());
+        }
+
+        private IEnumerator SequenceAnswerIncorrect()
         {
             sequenceAnswerIncorrect.Append(frontShieldTextWrong.DOFade(1, 1))
             .AppendInterval(3)
@@ -78,6 +82,8 @@ namespace DriVR.Scenario
             .Join(frontShieldTextConsequence.DOFade(1, 1))
             .AppendInterval(3)
             .Append(frontShieldTextConsequence.DOFade(0, 1));
+
+            yield return null;
         }
 
         #endregion
