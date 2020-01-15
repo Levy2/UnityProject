@@ -17,17 +17,15 @@ namespace DriVR.Scenario
     {
         #region Fields
 
-        Sequence uiQuestionSequence;
-
         private static TweenHandler instance;
 
+        private Sequence uiQuestionSequence;
         private Sequence sequenceAnswerIncorrect;
 
         [SerializeField] private Transform uiQuestion;
         [SerializeField] private Transform blackCube;
         [SerializeField] private TextMeshProUGUI frontShieldTextWrong;
         [SerializeField] private TextMeshProUGUI frontShieldTextConsequence;
-
 
         #endregion
 
@@ -68,12 +66,7 @@ namespace DriVR.Scenario
             uiQuestion.GetComponent<CanvasGroup>().DOFade(1, 1).SetDelay(10);
         }
 
-        public void StartSequenceAnswerIncorrect()
-        {
-            StartCoroutine(SequenceAnswerIncorrect());
-        }
-
-        private IEnumerator SequenceAnswerIncorrect()
+        public void SequenceAnswerIncorrect()
         {
             sequenceAnswerIncorrect.Append(frontShieldTextWrong.DOFade(1, 1))
             .AppendInterval(3)
@@ -82,8 +75,8 @@ namespace DriVR.Scenario
             .Join(frontShieldTextConsequence.DOFade(1, 1))
             .AppendInterval(3)
             .Append(frontShieldTextConsequence.DOFade(0, 1));
-
-            yield return null;
+            sequenceAnswerIncorrect.Goto(0, true);
+            sequenceAnswerIncorrect.AppendCallback(() => TweensQuestion1.Instance.StartSequenceQuestionIncorrect());
         }
 
         #endregion

@@ -16,6 +16,8 @@ namespace DriVR.Scenario
     {
         #region Fields
 
+        private static TweensQuestion1 instance;
+
         private Sequence sequenceQuestionBegin;
         private Sequence sequenceCorrect;
         private Sequence sequenceIncorrect;
@@ -26,13 +28,18 @@ namespace DriVR.Scenario
         [SerializeField] private Transform arrowLeft;
         [SerializeField] private Transform arrowRight;
 
-        [SerializeField] private Vector3[] playerCarWaypointsIncorrect = new[]
-        {
-            new Vector3 (28.78969f, 45.39801f, -28.38034f),
-            new Vector3 (19.31006f, 45.39783f, -18.25197f)
-        };
+        #endregion
+
+        #region Properties and Indexers
+
+        public static TweensQuestion1 Instance { get { return instance; } private set { instance = value; } }
 
         #endregion
+
+        private void Awake()
+        {
+            if (Instance == null) { Instance = this; }
+        }
 
         private void Start()
         {
@@ -50,22 +57,20 @@ namespace DriVR.Scenario
             .Append(playerCar.DOLocalMoveZ(-38.7f, 10))
             .Insert(0, greenCar.DOLocalMoveX(15.6f, 10))
             .Insert(0, blueCar.DOLocalMoveX(38.2f, 10))
-            .AppendCallback(() => StartSequenceQuestionIncorrect());
-
-            TweenHandler.Instance.SequenceUiQuestion();
+            .AppendCallback(() => TweenHandler.Instance.SequenceUiQuestion())
+            .AppendCallback(() => TweenHandler.Instance.SequenceAnswerIncorrect());
         }
 
         public void StartSequenceQuestionIncorrect()
         {
+            sequenceQuestionBegin.Goto(0, false);
+
             arrowLeft.GetComponent<SpriteRenderer>().DOColor(new Color32(30, 255, 0, 255), 0.5f).SetLoops(-1, LoopType.Yoyo).SetDelay(4.5f);
-
-            sequenceQuestionBegin
-            .Append(playerCar.DOLocalMoveZ(-38.7f, 10))
+            sequenceIncorrect
+            .Append(playerCar.DOLocalMoveZ(-21.28f, 10))
             .Insert(0, greenCar.DOLocalMoveX(15.6f, 10))
-            .Insert(0, blueCar.DOLocalMoveX(38.2f, 10))
-            .Append(playerCar.DOLocalPath(playerCarWaypointsIncorrect, 4, PathType.Linear).SetLookAt(1));
-            
-
+            .Insert(0, blueCar.DOLocalMoveX(30.7f, 10))
+            .Append(blueCar.DOLocalRotate(new Vector3(0, -90, -90), 1));
         }
     }
 }
