@@ -25,7 +25,6 @@ namespace DriVR.Scenario
         [SerializeField] private Transform uiQuestion;
         [SerializeField] private Transform blackCube;
         [SerializeField] private TextMeshProUGUI frontShieldTextWrong;
-        [SerializeField] private TextMeshProUGUI frontShieldTextConsequence;
 
         #endregion
 
@@ -58,7 +57,6 @@ namespace DriVR.Scenario
             uiQuestion.gameObject.GetComponent<CanvasGroup>().alpha = 0;
             blackCube.gameObject.GetComponent<MeshRenderer>().material.color = new Color32(0,0,0,0);
             frontShieldTextWrong.alpha = 0;
-            frontShieldTextConsequence.alpha = 0;
         }
 
         public void SequenceUiQuestion()
@@ -66,17 +64,23 @@ namespace DriVR.Scenario
             uiQuestion.GetComponent<CanvasGroup>().DOFade(1, 1).SetDelay(10);
         }
 
-        public void SequenceAnswerIncorrect()
+        public void StartSequenceAnswerIncorrect()
+        {
+            StartCoroutine(SequenceAnswerIncorrect());
+        }
+
+        private IEnumerator SequenceAnswerIncorrect()
         {
             sequenceAnswerIncorrect.Append(frontShieldTextWrong.DOFade(1, 1))
-            .AppendInterval(3)
-            .Append(frontShieldTextWrong.DOFade(0, 1))
-            .Append(blackCube.gameObject.GetComponent<MeshRenderer>().material.DOColor(new Color32(0, 0, 0, 255), 1.5f))
-            .Join(frontShieldTextConsequence.DOFade(1, 1))
-            .AppendInterval(3)
-            .Append(frontShieldTextConsequence.DOFade(0, 1));
-            sequenceAnswerIncorrect.Goto(0, true);
-            sequenceAnswerIncorrect.AppendCallback(() => TweensQuestion1.Instance.StartSequenceQuestionIncorrect());
+            .Append(frontShieldTextWrong.DOFade(0, 1).SetDelay(5))
+            .Append(blackCube.gameObject.GetComponent<MeshRenderer>().material.DOColor(new Color32(0, 0, 0, 255), 1.5f)).SetDelay(5);
+
+            yield return new WaitForSeconds(4);
+
+            blackCube.gameObject.SetActive(false);
+            frontShieldTextWrong.gameObject.SetActive(false);
+            uiQuestion.GetComponent<CanvasGroup>().DOFade(0, 1);
+            TweensQuestion1.Instance.StartSequenceQuestionIncorrect();
         }
 
         #endregion

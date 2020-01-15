@@ -20,7 +20,10 @@ EditorBuildSettings:
   - enabled: 0
     path: Assets/VRTK/Examples/[001 - Interactions] ControllerEvents.unity
     guid: 7ef04a272395bf04f8fdc6ec410f464e
-  - enabled: 1
+  - enabled: 0
     path: Assets/Scenes/Bart's Teststraat 2.unity
     guid: 39f744ae9a2facb4c8f44e3837bdfb45
+  - enabled: 1
+    path: Assets/Scenes/Bart's Teststraat 3.unity
+    guid: bca234af8e7a57a42b2d31e4056cf773
   m_configObjects: {}
