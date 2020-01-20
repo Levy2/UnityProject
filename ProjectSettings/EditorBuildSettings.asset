@@ -4,5 +4,8 @@
 EditorBuildSettings:
   m_ObjectHideFlags: 0
   serializedVersion: 2
-  m_Scenes: []
+  m_Scenes:
+  - enabled: 1
+    path: Assets/Scenes/Bart's Teststraat 3.unity
+    guid: bca234af8e7a57a42b2d31e4056cf773
   m_configObjects: {}
