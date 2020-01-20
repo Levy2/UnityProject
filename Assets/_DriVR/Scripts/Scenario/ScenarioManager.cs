@@ -7,18 +7,13 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.SceneManagement;
 
 namespace DriVR.Scenario
 {
     public class ScenarioManager : MonoBehaviour
     {
         #region Fields
-
-        [Header("Elements prefabs")]
-        [Tooltip("The prefab for the Question element prefab.")]
-        [SerializeField] private UIQuestion uiQuestionGameobject;
-        [Tooltip("The prefab for the Answer element prefab.")]
-        [SerializeField] private UIAnswer uiAnswerPrefab;
 
         private static ScenarioManager instance;
 
@@ -41,24 +36,18 @@ namespace DriVR.Scenario
 
         #region Methods
 
-        private void SwitchToNextScenario()
+        public void StartRestartScenario()
         {
-
+            StartCoroutine(RestartScenario());
         }
 
-        private void LoadScenarioUiElements()
+        private IEnumerator RestartScenario()
         {
+            yield return new WaitForSeconds(2);
 
-        }
-
-        private void StartNewGame()
-        {
-
-        }
-
-        private void StartAnimation(bool correctAnswer)
-        {
-
+            SceneManager.UnloadSceneAsync(SceneManager.GetActiveScene().buildIndex);
+            Resources.UnloadUnusedAssets();
+            SceneManager.LoadSceneAsync(SceneManager.GetActiveScene().buildIndex, LoadSceneMode.Single);
         }
 
         #endregion
