@@ -34,8 +34,8 @@ namespace DriVR.Scenario {
             {
                 answersWrong++;
             }
-            
-            Debug.Log(answersCorrect);
+
+            StatsScreen.Instance.UpdateStatsText();
         }
 
         private void ResetPoints()
